@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+	<head>
+		<title>Home Page</title>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="css/all_pages.css";>
+
+		<script src="js/animation.js"></script>
+		<script src="js/jquery.cycle.all.js"></script>
+		<script src="js/detectmobilebrowser.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#slideshow').cycle({
+					fx : 'scrollHorz',
+					speed : 500,
+					timeout : 3000,
+					pause : 1
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<!-- Header, logo and menu on every page -->
+		<header><img src = "images/ShulLogo.PNG" id="logo"/>Welcome To Congregation Ohr Moshe!
+		</header>
+
+		<nav class="navbar navbar-default" id="menu">
+			<div class="container-fluid">
+				<div class="navbar-header">
+
+					<a class="navbar-brand" href="#"> <!-- <img src = "images/ShulLogo.PNG" height="100" width="240"/> --> Congregation Ohr Moshe </a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="home_pg.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="about_the_rabbi.html">About The Rabbi</a>
+							</li>
+							<li>
+								<a href="about_the_shul.html">About The Shul</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="schedules.html">Schedules</a>
+					</li>
+					<li>
+						<a href="announcements.html">Announcements</a>
+					</li>
+					<li>
+						<a href="upcoming_events.html">Upcoming Events</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- end of menu -->
+
+		<div id="slideshow">
+			<img src="images/ShulLogo.PNG" width="500" height="315">
+			<img src="images/Nshei Comedy Night.PNG" width="400" height="420">
+			<img src="images/N'shei Night of Beauty.PNG" width="400" height="420">
+		</div>
+
+		<button type="button" class="btn btn-default btn-lg">
+			<span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Contact Us
+		</button>
+
+		<div class="panel panel-default">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">About Congregation Ohr Moshe</h3>
+				</div>
+
+				<div class="panel-body">
+
+					<p>
+
+						Ohr Moshe was founded in 1987 by a dedicated group of Askanimin in the Hillcrest Community.  The Shul
+
+						started out in the basement of R' Aryeh Z. Ginsberg, a Talmid of Yeshiva Chofetz Chaim.  It was named LZ"N Rav
+
+						Moshe Feinstein ZT"L who was niftar a year earlier.  The Shul moved to its present, permanent location in 1994.  In
+
+						2001 Rabbi Asher Schechter took over the position of Rav of our Shul.  Two years later the Shul welcomed
+
+						Keren Ohr PreSchool, which continues to educate the children from our Kehilla and the surrounding neighborhoods.
+
+						Our Main Beis Haknesses can seat up to 150.  The Shul's downstairs is suitable for use as a Simcha Room, and a
+
+						meeting room as well, with a capacity of up to 75 people.
+
+					</p>
+					<p>
+
+						Our Shul was established as a Yeshiva Style Minyan, meaning the Minhagim and practices are similar to that of a
+
+						Yeshiva. We Daven Nussach Ashkenaz and maintain absolute decorum throughout Davening & Kriyas HaTorah.
+
+						Our Gabbai recites the Misheberach for Tzahal and the Tefilla for the U.S. Govt. and troops every Shabbos & Yom Tov.
+
+						We are proud of our Friday night Dvar Halacha, daily Daf Yomi Shiur and Shacharis Minyan, Shabbos
+
+						afternoon Chabura (learning Maseches Shabbos) and informative Shiurim given by our Rav and other guest lecturers.
+
+					</p>
+					<p>
+
+						Our Kehilla is a warm and friendly group that enjoys socializing at the weekly Kiddushim after Davening, and at
+
+						the many events organized through the Shul. We have a very active N'shei Ohr Moshe with Shiurim and Chessed
+
+						programs for our Ladies. All members of our Kehilla enjoy and benefit from of our communal Shabbos meals that we
+
+						run from time to time, our playgroup and extensive playground to occupy the young children during Davening,
+
+						our Chessed Committee, Shiduchim Committee and many other activities and events going on within our Shul
+
+						community.
+					</p>
+
+					<p>
+						Please contact us if you would like to learn more, or to spend a Shabbos with us and experience our community
+
+						firsthand!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer on every page -->
+		<footer>
+			Congregation Ohr Moshe
+		</footer>
+
+		<!-- footer on every page -->
+	</body>
+
+</html>

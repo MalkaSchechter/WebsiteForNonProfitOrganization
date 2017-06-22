@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<body>
+
+		<head>
+			<!-- Normal style sheet used for layout and general formatting. -->
+			<link href="styles.css" type="text/css" rel="stylesheet">
+			<!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+			<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+			<!-- jQuery UI JavaScript library reference. -->
+			<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+
+			<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<meta charset="UTF-8">
+			<title>Upcoming Events</title>
+			<link rel="stylesheet" href="css/all_pages.css";>
+
+			<script src="js/animation.js"></script>
+
+			<script>
+				$(document).ready(function() {
+					$("#sortable").sortable({
+						placeholder : "ui-state-highlight",
+
+						start : function(event, ui) {
+							$(ui.item).addClass("ui-state-active");
+						},
+						stop : function(event, ui) {
+							$(ui.item).removeClass("ui-state-active");
+							$(ui.item).addClass("ui-state-default");
+						}
+					})
+				});
+			</script>
+		</head>
+
+		<!-- Header, logo and menu on every page -->
+		<header><img src = "images/ShulLogo.PNG" id="logo"/>Welcome To Congregation Ohr Moshe!
+		</header>
+
+		<nav class="navbar navbar-default" id="menu">
+			<div class="container-fluid">
+				<div class="navbar-header">
+
+					<a class="navbar-brand" href="#"> <!-- <img src = "images/ShulLogo.PNG" height="100" width="240"/> --> Congregation Ohr Moshe </a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="home_pg.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="about_the_rabbi.html">About The Rabbi</a>
+							</li>
+							<li>
+								<a href="about_the_shul.html">About The Shul</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="schedules.html">Schedules</a>
+					</li>
+					<li>
+						<a href="announcements.html">Announcements</a>
+					</li>
+					<li>
+						<a href="upcoming_events.html">Upcoming Events</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- end of menu -->
+
+		<div>
+			<div class="panel panel-default">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Upcoming Events - Click and Drag to Reorder</h3>
+					</div>
+
+					<div class="panel-body">
+						<ul id = "sortable" >
+							<li class="ui-state-default sortable">
+								Candle lighting this week is at 8:10
+							</li>
+							<li class="ui-state-default sortable">
+								Kiddush this Shabbos sponsored by anonymous in honor of father's day
+							</li>
+							<li class="ui-state-default sortable">
+								The Pirkei Avos shiur this week will be given by Rabbi A. Katz
+							</li>
+							<li class="ui-state-default sortable">
+								The topic of the Shalosh Seudos chaburah is: A matter of interest-the ins and outs of ribis
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer on every page -->
+		<footer>
+			Congregation Ohr Moshe
+		</footer>
+		<!-- footer on every page -->
+	</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+	background-color: #ADD8E6;
+}
+#slideshow{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+header{
+	font-size: 32px;
+	font-family: courier;
+}
+footer{
+	text-align: center;
+}
+li:hover{
+	color:blue;
+}
+
+#logo{
+	height:100px;
+	width:300px;
+	display:inline;
+}
+ 
+

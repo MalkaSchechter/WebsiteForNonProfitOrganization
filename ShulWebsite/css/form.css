@@ -1,0 +1,36 @@
+/* type selectors */
+article, aside, figure, footer, header, nav, section {
+	display: block;
+}
+form.body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	margin: 0 auto;
+	width: 750px;
+	border: 3px solid blue;
+}
+form.h1 {
+	color: blue;
+}
+form.section {
+	padding: 0 2em 1em;
+}
+form > fieldset > label {
+
+	float: left;
+	width: 15em;
+	text-align: left;
+}
+input {
+	width: 15em;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+
+.error {
+	color: red;
+	margin-left: .5em;
+}
+#join, #reset {
+	width: 7.5em;
+}
